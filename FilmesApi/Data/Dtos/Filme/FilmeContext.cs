@@ -1,7 +1,4 @@
-﻿using FilmesApi.Models;
-using Microsoft.EntityFrameworkCore;
-
-namespace FilmesApi.Data;
+﻿namespace FilmesApi.Data;
 
 /// <summary>
 /// Contexto de banco de dados para a entidade Filme.
@@ -21,4 +18,8 @@ public class FilmeContext : DbContext
     /// Obtém ou define um conjunto de entidades de Filme no banco de dados.
     /// </summary>
     public DbSet<Filme> Filmes { get; set; }
+
+    public DbSet<Cinema> Cinemas { get; set; }
+
+    public DbSet<Endereco> Enderecos { get; set; }
 }

@@ -1,0 +1,13 @@
+﻿global using System.ComponentModel.DataAnnotations;
+global using AutoMapper;
+global using FilmesApi.Models;
+global using FilmesApi.Data;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Infrastructure;
+global using Microsoft.EntityFrameworkCore.Metadata;
+global using Microsoft.EntityFrameworkCore.Migrations;
+global using FilmesApi.Data.Dtos;
+global using Microsoft.AspNetCore.JsonPatch;
+global using Microsoft.AspNetCore.Mvc;
+global using FilmesApi.Data.Dtos.Cinema;
+global using FilmesApi.Data.Dtos.Endereco;

@@ -1,9 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
-
-#nullable disable
-
-namespace FilmesApi.Migrations;
+﻿namespace FilmesApi.Migrations;
 
 /// <summary>
 /// Migração para criar a tabela de filmes no banco de dados.

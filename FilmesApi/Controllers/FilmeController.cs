@@ -1,11 +1,4 @@
-﻿using AutoMapper;
-using FilmesApi.Data;
-using FilmesApi.Data.Dtos;
-using FilmesApi.Models;
-using Microsoft.AspNetCore.JsonPatch;
-using Microsoft.AspNetCore.Mvc;
-
-namespace FilmesApi.Controllers;
+﻿namespace FilmesApi.Controllers;
 
 /// <summary>
 /// Controlador responsável por operações relacionadas a filmes.

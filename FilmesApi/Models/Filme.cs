@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace FilmesApi.Models;
+﻿namespace FilmesApi.Models;
 
 /// <summary>
 /// Modelo que representa um filme.

@@ -1,8 +1,4 @@
-﻿using AutoMapper;
-using FilmesApi.Data.Dtos;
-using FilmesApi.Models;
-
-namespace FilmesApi.Profiles;
+﻿namespace FilmesApi.Profiles;
 
 /// <summary>
 /// Classe de perfil para mapear objetos entre DTOs e entidades de Filme.

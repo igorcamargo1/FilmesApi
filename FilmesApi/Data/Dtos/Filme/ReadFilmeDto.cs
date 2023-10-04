@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace FilmesApi.Data.Dtos;
+﻿namespace FilmesApi.Data.Dtos;
 
 /// <summary>
 /// DTO (Data Transfer Object) para ler informações de um filme.
