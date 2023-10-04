@@ -11,4 +11,6 @@ public class Endereco
 
     [Required(ErrorMessage = "O campo Numero precisa ser preenchido.")]
     public int Numero { get; set; }
+
+    public virtual Cinema Cinema { get; set; }
 }
