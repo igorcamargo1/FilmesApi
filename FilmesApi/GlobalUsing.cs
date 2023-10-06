@@ -14,3 +14,4 @@ global using FilmesApi.Data.Dtos.Endereco;
 global using Microsoft.OpenApi.Models;
 global using System.Reflection;
 global using FilmesApi.Data.Dtos.Sessao;
+global using Swashbuckle.AspNetCore.Annotations;

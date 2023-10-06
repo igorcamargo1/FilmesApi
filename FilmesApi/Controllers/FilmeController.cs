@@ -40,6 +40,7 @@ public class FilmeController : ControllerBase
     /// </summary>
     /// <param name="skip">Número de itens a serem pulados</param>
     /// <param name="take">Número máximo de itens a serem retornados</param>
+    /// <param name="nomeCinema"></param>
     /// <returns>Uma coleção de objetos ReadFilmeDto</returns>
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
