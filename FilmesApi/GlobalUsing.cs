@@ -11,3 +11,6 @@ global using Microsoft.AspNetCore.JsonPatch;
 global using Microsoft.AspNetCore.Mvc;
 global using FilmesApi.Data.Dtos.Cinema;
 global using FilmesApi.Data.Dtos.Endereco;
+global using Microsoft.OpenApi.Models;
+global using System.Reflection;
+global using FilmesApi.Data.Dtos.Sessao;

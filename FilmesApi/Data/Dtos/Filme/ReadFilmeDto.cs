@@ -25,4 +25,6 @@ public class ReadFilmeDto
     /// Obtém ou define a hora da consulta. O valor padrão é a data e hora atuais.
     /// </summary>
     public DateTime HoraDaConsulta { get; set; } = DateTime.Now;
+
+    public ICollection<ReadSessaoDto> Sessoes { get; set; }
 }

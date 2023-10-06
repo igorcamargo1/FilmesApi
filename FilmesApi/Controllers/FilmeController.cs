@@ -43,10 +43,22 @@ public class FilmeController : ControllerBase
     /// <returns>Uma coleção de objetos ReadFilmeDto</returns>
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
-    public IEnumerable<ReadFilmeDto> ListarFilmes([FromQuery] int skip = 0,
-        [FromQuery] int take = 50)
+    public IEnumerable<ReadFilmeDto> ListarFilmes
+        ([FromQuery] int skip = 0,
+        [FromQuery] int take = 50,
+        [FromQuery] string? nomeCinema = null)
     {
-        return _mapper.Map<List<ReadFilmeDto>>(_context.Filmes.Skip(skip).Take(take));
+        if (nomeCinema == null)
+        {
+        return _mapper.Map<List<ReadFilmeDto>>
+                (_context.Filmes.Skip(skip).Take(take).ToList());
+
+        }
+        return _mapper.Map<List<ReadFilmeDto>>
+            (_context.Filmes.Skip(skip).Take(take)
+            .Where(filme => filme.Sessoes
+            .Any(sessao => sessao.Cinema.Nome == nomeCinema)).ToList());
+
     }
 
     /// <summary>
@@ -117,7 +129,6 @@ public class FilmeController : ControllerBase
     /// </summary>
     /// <param name="id">ID do filme a ser excluído</param>
     /// <returns>Status 204 No Content se a exclusão for bem-sucedida</returns>
-    [HttpDelete("{id}")]
     [HttpDelete("{id}")]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     public IActionResult DeletaFilme(int id)

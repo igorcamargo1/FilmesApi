@@ -1,4 +1,5 @@
-﻿namespace FilmesApi.Controllers
+﻿
+namespace FilmesApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
